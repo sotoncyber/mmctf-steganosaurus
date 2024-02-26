@@ -1,4 +1,5 @@
 # SUCSS Challenge Template
+[![Python static type/format checks](https://github.com/sotoncyber/challenge_template/actions/workflows/checks.yaml/badge.svg)](https://github.com/sotoncyber/challenge_template/actions/workflows/checks.yaml)
 
 This template repository contains all the required files to start a simple challenge.
 
