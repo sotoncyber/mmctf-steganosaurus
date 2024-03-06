@@ -5,6 +5,7 @@ from challenge import app
 from . import (
     challenge_1,  # noqa: F401
     challenge_2,  # noqa: F401
+    challenge_3,  # noqa: F401
 )
 
 
