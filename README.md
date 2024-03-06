@@ -9,7 +9,7 @@ Ensure you have python poetry installed - this is used to install a virtualenv a
 
 ```
 pip install --upgrade pip
-pip3 install -u poetry
+pip3 install poetry
 poetry install --no-root
 ```
 
