@@ -3,7 +3,7 @@ def checkpass(input_text):
     # Add your logic here
     match input_text:
         case "texting was so hard in the olden days":
-            out = "Well done you got challenge 1"
+            out = "Well done you got challenge 6"
         case "1tsN0isy1nH3re":
             out = "Well done you got challenge 2"
         case "wRitEl1keaNEyGpT1aN!":

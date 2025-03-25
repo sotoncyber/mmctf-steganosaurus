@@ -32,6 +32,7 @@ class Challenge3View(views.View):
     def dispatch_request(self) -> str:
         return render_template(self.template_name)
 app.add_url_rule("/3/", view_func=Challenge3View.as_view("challenge3"))
+
 class Challenge4View(views.View):
     template_name = "challenge4.html"
 
@@ -45,3 +46,10 @@ class Challenge5View(views.View):
     def dispatch_request(self) -> str:
         return render_template(self.template_name)
 app.add_url_rule("/5/", view_func=Challenge5View.as_view("challenge5"))
+
+class Challenge6View(views.View):
+    template_name = "challenge6.html"
+
+    def dispatch_request(self) -> str:
+        return render_template(self.template_name)
+app.add_url_rule("/6/", view_func=Challenge6View.as_view("challenge6"))
