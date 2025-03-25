@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -10,7 +17,6 @@ h1 {
 }
 
 .container {
-    width: 800px;
     margin: 20px auto;
     background-color: rgba(0,0,0,0.1);
     padding: 15px;
@@ -76,7 +82,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 /* ----------------------------------------------Generalise------------------------------------- */
 
-#header, #topbar, #topnav, #breadcrumb, .container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+#header, #topbar, #topnav, #breadcrumb, .container, #footer, #copyright{display:block; position:relative; margin:0 auto;}
 
 /* ----------------------------------------------Header------------------------------------- */
 
@@ -87,21 +93,24 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 /* ----------------------------------------------Topbar------------------------------------- */
 
-#topbar{padding:15px 0; border-bottom:1px solid #999999;}
+#topbar{padding:15px 0; border-bottom:1px solid #999999; border-radius: 0;}
 #topbar .fl_left{margin:8px 0 0 0; padding:0;}
 #topbar .fl_left, #topbar .fl_left a{color:#000000;}
 
-/* ----------------------------------------------BreadCrumb------------------------------------- */
+.block{
+    font-size: 20px;
+}
 
-#breadcrumb{padding:20px 0; border-top:1px solid #999999; border-bottom:1px solid #999999;}
-#breadcrumb ul{margin:0; padding:0; list-style:none;}
-#breadcrumb ul li{display:inline;}
-#breadcrumb ul li.current a{text-decoration:underline;}
+.whitebox{
+    padding:30px;
+    color:#999999;
+    background-color:#FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
-/* ----------------------------------------------Content------------------------------------- */
-
-.container{padding:30px 0; border-top:1px solid #999999; border-bottom:1px solid #999999;}
-.whitebox{padding:30px; color:#999999; background-color:#FFFFFF;}
 .whitebox a{color:#A3443E; background-color:#FFFFFF;}
 .content{display:block; float:left; width:600px;}
 
