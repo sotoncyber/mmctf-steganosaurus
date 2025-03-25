@@ -4,7 +4,6 @@ from challenge import app
 
 from . import (
     stego,  # noqa: F401
-    challenge_3,  # noqa: F401
 )
 
 
