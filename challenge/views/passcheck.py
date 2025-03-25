@@ -2,6 +2,8 @@
 def checkpass(input_text):
     # Add your logic here
     match input_text:
+        case "s0m4nyh0urs0ffun":
+            out = "Well done you got challenge 1"
         case "texting was so hard in the olden days":
             out = "Well done you got challenge 6"
         case "1tsN0isy1nH3re":
