@@ -3,14 +3,18 @@
 {% block content %}
     <link rel="stylesheet" href="static/layout.css" type="text/css" />
     <h1>Challenge 3</h1>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0001.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0002.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0003.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0004.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0005.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0006.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0007.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0008.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0009.png') }}" alt=""></img>
-    <img className="noisyImg" src="{{ url_for('static', filename='Images/noisy/0010.png') }}" alt=""></img>
+    You need magic eyes for this one
+    <div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0001.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0002.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0003.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0004.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0005.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0006.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0007.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0008.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0009.png') }}" alt=""></img>
+        <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0010.png') }}" alt=""></img>
+    </div>
+    Or download the images <a href="{{ url_for('static', filename='Images/noisy.zip') }}">here</a>
 {% endblock %}
