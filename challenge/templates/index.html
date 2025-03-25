@@ -41,6 +41,27 @@
       </div>
       <div class="clear"></div>
     </div>
+    <div>
+      <script>
+        async function checkpass() {
+            const inputText = document.getElementById('textInput').value;
+            const response = await fetch('/checkpass', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ input_text: inputText })
+            });
+            const data = await response.json();
+            alert(data.result);
+        }
+    </script>
+
+    <input type="text" id="textInput" placeholder="Type something...">
+    <button onclick="checkpass()">Submit</button>
+
+
+    </div>
   </div>
 </div>
 {% endblock %}

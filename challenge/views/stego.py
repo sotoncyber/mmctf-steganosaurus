@@ -1,6 +1,16 @@
-from flask import render_template, views
-
+from urllib import request
+from flask import render_template, views,jsonify
+from flask import request as R
 from challenge import app
+from challenge.views import passcheck
+
+@app.route('/checkpass', methods=['POST'])
+def check_pass():
+    input_text = R.json.get('input_text')
+    result = passcheck.checkpass(input_text)
+    return jsonify({'result': result})
+
+
 
 class Challenge1View(views.View):
     template_name = "challenge1.html"
