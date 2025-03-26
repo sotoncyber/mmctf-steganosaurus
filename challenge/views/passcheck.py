@@ -1,6 +1,6 @@
 # checkpass.py
 def checkpass(input_text):
-    # Add your logic here
+    # Please don't look at our secret passwords, this is not an OSINT challenge
     match input_text:
         case "s0m4nyh0urs0ffun":
             out = "Well done you got challenge 1"
