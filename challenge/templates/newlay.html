@@ -18,6 +18,7 @@
             color: #fff;
             padding: 10px 0;
             text-align: center;
+            border-radius: 0;
         }
         nav {
             display: flex;
@@ -54,12 +55,14 @@
 </head>
 <body>
     <header>
-        <h1 id="tit">{%if title%}{{title}}{%else%}SUCSS Challenge{%endif%}</h1>
+        <h1 style = "color: #f4f4f4;">{%if title%}{{title}}{%else%}SUCSS Challenge{%endif%}</h1>
     </header>
     <main>
         <div id="content" class="container">
             {% block content %}{% endblock content %}
-            </div>
+        </div>
+        <br>
+        Back to <a href="/" style="background: none;">Home</a>
     </main>
 </body>
 </html>

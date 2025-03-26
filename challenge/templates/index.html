@@ -55,7 +55,7 @@
         <p class = "easy">Easy</p>
       </div>
     </div>
-    <div>
+    <div style="display: flex; justify-content: center;">
       <script>
         async function checkpass() {
             const inputText = document.getElementById('textInput').value;
@@ -70,13 +70,9 @@
             alert(data.result);
             // default password: 1ms0n0sy in case of emergancy
         }
-    </script>
-
-    <input type="text" id="textInput" placeholder="Enter password...">
-    <button onclick="checkpass()">Submit</button>
-
-
-    </div>
+      </script>
+      <input type="text" id="textInput" placeholder="Enter password...">
+      <button onclick="checkpass()" style="margin: 0; margin-left: 20px;">Submit</button> </div>
   </div>
 </div>
 {% endblock %}
