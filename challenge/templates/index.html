@@ -1,10 +1,10 @@
 {% extends 'layout.html' %}
 
 <title>Steganosaurus</title>
-
 {% block content %}
 <div class="wrapper">
   <div id="header">
+    
     <h1>Steganosaurus</h1>
     <p>SUCSS 2025</p>
   </div>
@@ -13,12 +13,13 @@
 <div class="wrapper">
   <div id="topbar" style="display: flex;">
     <div class="fl_left">Disc: tombash | Mail: tp1g24@soton.ac.uk</div>
-    <div class="fl_left">Disc: hazza_ninja | Mail: hw3g24@soton.ac.uk</div> 
+    <div class="fl_left">Disc: windcheeta | Mail: hw3g24@soton.ac.uk</div> 
     <br class="clear" />
   </div>
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper">
+  <!-- maybe you should look for some exposed js ;) -->
   <div class="container">
     <div class="whitebox" id="hpage_services">
       <div class="block"><strong><a href = "/1/">Challenge 1</a></strong>
@@ -39,10 +40,14 @@
       </div>
       <div class="block"><strong><a href = "/5/">Challenge 5</a></strong>
         <p>Dave sniffs rudeness</p>
-        <p class = "hard">Hard</p>
+        <p class = "medium">medium</p>
       </div>
       <div class="block"><strong><a href = "/6/">Challenge 6</a></strong>
         <p>Outdated password recovery</p>
+        <p class = "easy">Easy</p>
+      </div>
+      <div class="block"><strong><a href = "/7/">Challenge 7</a></strong>
+        <p>BnE</p>
         <p class = "easy">Easy</p>
       </div>
     </div>
@@ -59,6 +64,7 @@
             });
             const data = await response.json();
             alert(data.result);
+            // default password: 1ms0n0sy in case of emergancy
         }
     </script>
 

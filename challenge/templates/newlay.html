@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            
         }
         header {
             background-color: #333;
@@ -48,11 +49,12 @@
             width: 100%;
             bottom: 0;
         }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>{%if title%}{{title}}{%else%}SUCSS Challenge{%endif%}</h1>
+        <h1 id="tit">{%if title%}{{title}}{%else%}SUCSS Challenge{%endif%}</h1>
     </header>
     <main>
         <div id="content" class="container">
