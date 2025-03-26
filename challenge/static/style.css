@@ -31,7 +31,6 @@
 
 img {
     width: 540px;
-    height: 540px;
 }
 
 body {
@@ -106,7 +105,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 #header{text-align:center; text-transform:uppercase;}
 #header h1, #header p{margin:0; padding:0; list-style:none; line-height:normal;}
-#header h1{font-size:100px}
+#header h1{font-size: 10vw;}
 #header p{margin-top:-20px; font-size:20px}
 
 /* ----------------------------------------------Topbar------------------------------------- */
@@ -119,6 +118,8 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     font-size: 20px;
     outline-style: solid;
     outline-color: sienna;
+    margin: 10px;
+    transition: 0.2s;
 }
 
 .block:hover {
@@ -126,13 +127,25 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     outline-color: #ff0000;
 }
 
+.hint {
+    background-color: #333333;
+    color: #333333;
+    transition: 0.2s;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.hint:hover {
+    color: #666666;
+}
+
 .whitebox{
     padding:30px;
     background-color:#FFFFFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .whitebox a{color:#A3443E; background-color:#FFFFFF;}

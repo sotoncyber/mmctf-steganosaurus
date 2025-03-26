@@ -60,3 +60,10 @@ class Challenge7View(views.View):
     def dispatch_request(self) -> str:
         return render_template(self.template_name)
 app.add_url_rule("/7/", view_func=Challenge7View.as_view("challenge7"))
+
+class Challenge8View(views.View):
+    template_name = "challenge8.html"
+
+    def dispatch_request(self) -> str:
+        return render_template(self.template_name)
+app.add_url_rule("/8/", view_func=Challenge8View.as_view("challenge8"))

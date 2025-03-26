@@ -3,7 +3,8 @@
 {% block content %}
     <link rel="stylesheet" href="static/layout.css" type="text/css" />
     <h1>Challenge 3</h1>
-    <p>Dave has found these images. He's certain that together they somehow reveal a message but he cant figure it out.</p>
+    <p>Dave has found these images. He's certain that together they somehow reveal a message but he cant figure it out.<br>Hover over the hint to reveal</p>
+    <p>Hint: <span class="hint">Try to find out what's different between the images</span></p>
     <div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
         <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0001.png') }}" alt=""></img>
         <img class="noisyImg" src="{{ url_for('static', filename='Images/noisy/0002.png') }}" alt=""></img>
