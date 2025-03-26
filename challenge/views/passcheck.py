@@ -18,6 +18,8 @@ def checkpass(input_text):
             out = "Well done you got challenge 6"
         case "1ms0n0sy":
             out = "Well done you got challenge 7"
+        case "mys3cr3tAdm1r3r":
+            out = "Well done you got challenge 8"
         case _:
             out = "not quite try again"
     return f"{out}"
